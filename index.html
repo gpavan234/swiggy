@@ -3,12 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FoodDelivery - Order Food Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello Pavan,</h1>
-</body>
-</html>  
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="FoodDelivery Logo">
+                <h1>FoodDelivery</h1>
+            </div>
+            
+            <div class="search-bar">
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="Search for restaurants, cuisine or a dish">
+            </div>
+            
+            <div class="nav-links">
+                <a href="#"><i class="material-icons">local_offer</i> Offers</a>
+                <a href="#"><i class="material-icons">help</i> Help</a>
+                <a href="#"><i class="material-icons">person</i> Sign In</a>
+                <a href="#"><i class="material-icons">shopping_cart</i> Cart</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="location-selector">
+                <select id="location">
+                    <option value="">Select your location</option>
+                    <option value="bengaluru">Bengaluru</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="chennai">Chennai</option>
+                </select>
+                <span>Deliver to: Home</span>
+            </div>
+            
+            <div class="toggle-btn">
+                <span>Veg Only</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="vegSwitch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2>What's on your mind?</h2>
+            <div class="category-slider">
+                <div class="category-item">
+                    <img src="images/categories/pizza.jpg" alt="Pizza">
+                    <p>Pizza</p>
+                </div>
+                <div class="category-item">
+                    <img src="images/categories/burger.jpg" alt="Burger">
+                    <p>Burger</p>
+                </div>
+                <div class="category-item">
+                    <img src="images/categories/biryani.jpg" alt="Biryani">
+                    <p>Biryani</p>
+                </div>
+                <div class="category-item">
+                    <img src="images/categories/chinese.jpg" alt="Chinese">
+                    <p>Chinese</p>
+                </div>
+                <div class="category-item">
+                    <img src="images/categories/north-indian.jpg" alt="North Indian">
+                    <p>North Indian</p>
+                </div>
+                <div class="category-item">
+                    <img src="images/categories/south-indian.jpg" alt="South Indian">
+                    <p>South Indian</p>
+                </div>
+                <div class="category-item">
+                    <img src="images/categories/desserts.jpg" alt="Desserts">
+                    <p>Desserts</p>
+                </div>
+                <div class="category-item">
+                    <img src="images/categories/shakes.jpg" alt="Shakes">
+                    <p>Shakes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Offers Section -->
+    <section class="offers">
+        <div class="container">
+            <h2>Best Offers For You</h2>
+            <div class="offers-slider">
+                <div class="offer-item">
+                    <img src="images/offers/offer1.jpg" alt="Offer 1">
+                </div>
+                <div class="offer-item">
+                    <img src="images/offers/offer2.jpg" alt="Offer 2">
+                </div>
+                <div class="offer-item">
+                    <img src="images/offers/offer3.jpg" alt="Offer 3">
+                </div>
+                <div class="offer-item">
+                    <img src="images/offers/offer4.jpg" alt="Offer 4">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Restaurants Section -->
+    <section class="restaurants">
+        <div class="container">
+            <div class="restaurants-header">
+                <h2>Restaurants Near You</h2>
+                <div class="filter-options">
+                    <button class="active">Relevance</button>
+                    <button>Delivery Time</button>
+                    <button>Rating</button>
+                    <button>Cost: Low to High</button>
+                    <button>Cost: High to Low</button>
+                </div>
+            </div>
+            
+            <div class="restaurant-grid" id="restaurantGrid">
+                <!-- Restaurant cards will be added here by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="#">Help & Support</a></li>
+                        <li><a href="#">Partner with us</a></li>
+                        <li><a href="#">Ride with us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Refund & Cancellation</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>We Deliver to</h3>
+                    <ul>
+                        <li><a href="#">Bengaluru</a></li>
+                        <li><a href="#">Mumbai</a></li>
+                        <li><a href="#">Delhi</a></li>
+                        <li><a href="#">Hyderabad</a></li>
+                        <li><a href="#">Chennai</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 FoodDelivery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-<!-- rundll32.exe keymgr.dll,KRShowKeyMgr
- -->
+    <script src="script.js"></script>
+</body>
+</html>
